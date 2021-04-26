@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de encuesta de satisfacción</title>
+    <link rel="stylesheet" href="css/min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario de encuesta de satisfacción</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenidos a Hb companies</h1>
+        <p>Denos una breve opinión acerca de tu experiencia en nuestro portal</p>
+    </header>
+    <main>
+        <form action="" id="">
+            <label for="name">
+                <span>Nombre</span>
+                <input type="text" name="mail" id="mail" placeholder="Ingrese su correo" required>
+            </label>
+            <label for="email" id="">
+                <span>Correo</span>
+                <input type="email" name="name" id="name" placeholder="Ingrese su nombre" required>
+            </label>
+            <label for="number">
+                <span>Número</span>
+                <input type="number" name="number" id="number" placeholder="Ingrese su número" min="3000000000"
+                    max="9999999999" required>
+            </label>
+            <label for="position">
+                <span>Cargo</span>
+                <input list="dropdown"><datalist id="dropdown">
+                    <option value="1">Estudiante</option>
+                    <option value="2">Aprendiz de tiempo completo</option>
+                    <option value="3">Cargo tiempo completo</option>
+                    <option value="4">Prefiero no decir</option>
+                    <option value="5">Otra</option>
+                    <option value="2">Aprendiz de tiempo completo</option>
+                </datalist>
+            </label>
+            <h2>Su opinión nos importa</h2>
+            <section>
+                <p>¿Cuál es su opinión sobre los siguientes aspectos de nuestra gestión?</p>
+                <label for="">
+                    <input type="radio" name="CalProducto" value="">
+                    <input type="radio" name="CalProducto" value="">
+                    <input type="radio" name="CalProducto" value="">
+                </label>
+            </section>
+            <section>
+                <p>¿En que podemos mejorar? (Marque todas las que corresponda)</p>
+                <label for="">
+                    <input type="checkbox" name="Improve" value="">x
+                </label>
+                <label for="">
+                    <input type="checkbox" name="Improve" value="">x
+                </label>
+                <label for="">
+                    <input type="checkbox" name="Improve" value="">x
+                </label>
+                <label for="">
+                    <p>¿De que forma podemos mejorar?. Describalo</p>
+                    <textarea name="improve" id="improve" cols="30" rows="10"></textarea>
+                </label>
+            </section>
+            <label for="">
+                <p>Ingrese algunas observaciones</p>
+                <textarea name="observation" id="observation" cols="30" rows="10"></textarea>
+            </label>
+            <input type="submit" id="submit">
+        </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
