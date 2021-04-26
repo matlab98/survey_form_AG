@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="container card-0 justify-content-center ">
+    <div class="container inner-card justify-content-center">
         <div class="card-body px-sm-4 px-0">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-10 col">
@@ -28,82 +28,111 @@
                                 <div class="row justify-content-center">
                                     <div class="col-lg-5 col-md-6 col-sm-12">
 
-                                        <div class="form-group"><label for="first-name" id="name-label">Primer nombre</label><input
-                                                type="text" class="form-control" name="name" id="name"
-                                                placeholder="Escribe tu nombre" required> </div>
-                                        <div class="form-group"> <label for="Mobile-Number" id="number-label">Número</label> <input
-                                                type="number" class="form-control" id="number"
-                                                placeholder="Escribe tu número celular" min="3000000000" max="9999999999" required> </div>
-                                        <div class="form-group"> <label for="position">Cargo</label> 
+                                        <div class="form-group"><label for="first-name" id="name-label">Primer
+                                                nombre</label><input type="text" class="form-control" name="name"
+                                                id="name" placeholder="Escribe tu nombre" required> </div>
+                                        <div class="form-group"> <label for="Mobile-Number"
+                                                id="number-label">Número</label> <input type="number"
+                                                class="form-control" id="number" placeholder="Escribe tu número celular"
+                                                min="3000000000" max="9999999999" required> </div>
+                                        <div class="form-group"> <label for="position">Cargo</label>
                                             <input class="form-group" list="dropdown"><datalist id="dropdown">
                                                 <option value="Otra...">Otra...</option>
                                                 <option value="Estudiante">Estudiante</option>
-                                                <option value="Aprendiz de tiempo completo">Aprendiz de tiempo completo</option>
+                                                <option value="Aprendiz de tiempo completo">Aprendiz de tiempo completo
+                                                </option>
                                                 <option value="Cargo tiempo completo">Cargo tiempo completo</option>
                                                 <option value="Prefiero no decir">Prefiero no decir</option>
-                                                
+
                                             </datalist>
-                                         </div>
- 
+                                        </div>
+
                                     </div>
                                     <div class="col-lg-5 col-md-6 col-sm-12">
                                         <div class="form-group"> <label for="last-name">Apellido</label> <input
                                                 type="text" class="form-control" id="last-name"
                                                 placeholder="Escribe tu apellido"> </div>
-                                        <div class="form-group"> <label for="correo" id="email-label">Correo</label> <input type="email"
-                                                class="form-control" id="email" name="email" placeholder="Escribe tu correo" required> </div>
+                                        <div class="form-group"> <label for="correo" id="email-label">Correo</label>
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                placeholder="Escribe tu correo" required> </div>
 
                                         <div class="form-group"> <label for="">¿En que podemos
                                                 mejorar?</label>
-                                                <input class="form-group" list="dropdown"><datalist id="">
-                                                    <option>Escoja una opción...</option>
-                                                    <option>Back-end</option>
-                                                    <option>Front-end</option>
-                                                    <option>Tiempo de respuesta</option>
-                                                </datalist>
-                                                 </div>
+                                            <input class="form-group" list="dropdown"><datalist id="">
+                                                <option>Escoja una opción...</option>
+                                                <option>Back-end</option>
+                                                <option>Front-end</option>
+                                                <option>Tiempo de respuesta</option>
+                                            </datalist>
+                                        </div>
                                     </div>
-                                    
                                 </div>
-                                <div class="col-lg-5 col-md-6 col-sm-12">
-                                <h2 class="font-weight-bold ml-md-0 mx-auto text-center text-sm-left">Su opinión nos importa</h2>
-                                <section>
-                                    <p class="mt-md-4 ml-md-0 ml-2 text-center text-sm-left">¿Cuál es su opinión sobre los siguientes aspectos de nuestra gestión?</p>
-                                    <label for="">
-                                        <input type="radio" name="CalProducto" value="Excelente">
-                                        <input type="radio" name="CalProducto" value="Bueno">
-                                        <input type="radio" name="CalProducto" value="Regular">
-                                        <input type="radio" name="CalProducto" value="Malo">
-                                    </label>
-                                </section>
-                                <section>
-                                    <p class="mt-md-4 ml-md-0 ml-2 text-center text-sm-left">¿En que podemos mejorar? (Marque todas las que corresponda)</p>
-                                    <label for="">
-                                        <input type="checkbox" name="Improve" value="Diseño de la página">x
-                                    </label>
-                                    <label for="">
-                                        <input type="checkbox" name="Improve" value="Velocidad de respuesta">x
-                                    </label>
-                                    <label for="">
-                                        <input type="checkbox" name="Improve" value="Demasiados elementos en una vista">x
-                                    </label>
-                                    <label for="">
-                                        <p>¿De que forma podemos mejorar?. Describalo</p>
-                                        <textarea name="improve" id="improve" cols="30" rows="10"></textarea>
-                                    </label>
-                                </section>
-                            </div>
+                                <div class="">
+                                    <h2 class="font-weight-bold  text-center">Su opinión nos importa</h2>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-12 col-lg-10 col-12">
+                                        <p class="mt-md-4 ml-md-0 ml-2 text-center">¿Cuál es su opinión sobre los
+                                            siguientes aspectos de nuestra gestión?</p>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label" for=""><input class="form-check-input"
+                                                    type="radio" name="CalProducto" value="Excelente">Excelente</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label" for=""><input class="form-check-input"
+                                                    type="radio" name="CalProducto" value="Bueno">Bueno</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label" for=""><input class="form-check-input"
+                                                    type="radio" name="CalProducto" value="Regular">Regular</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label" for=""><input class="form-check-input"
+                                                    type="radio" name="CalProducto" value="Malo">Malo</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                    </section>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-12 col-lg-10 col-12">
+                                            <p class="mt-md-4 ml-md-0 ml-2 text-center">¿En que podemos mejorar? (Marque
+                                                todas las que corresponda)</p>
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="check1">
+                                                      <input type="checkbox" class="form-check-input" id="Improve" name="improve" value="Diseño de la página">Diseño de la página
+                                                    </label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <label class="form-check-label" for="check">
+                                                      <input type="checkbox" class="form-check-input" id="Improve" name="improve" value="Velocidad de respuesta">Velocidad de respuesta
+                                                    </label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <label class="form-check-label" for="check2">
+                                                      <input type="checkbox" class="form-check-input" id="Improve" name="improve" value="Demasiados elementos en una vista">Demasiados elementos en una vista
+                                                    </label>
+                                                  </div>
+
+                                            <div class="form-group">
+                                                <p class="mt-md-4 ml-md-0 ml-2 text-center">¿De que forma podemos
+                                                    mejorar?. Describalo</p>
+                                                <textarea class="form-control rounded-0" name="improve" id="improve"
+                                                    rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="row justify-content-center">
                                     <div class="col-md-12 col-lg-10 col-12">
-                                        <div class="form-group"> <label
-                                                for="FormControlTextarea">Observaciones</label>
+                                        <div class="form-group"> <label for="FormControlTextarea">Observaciones</label>
                                             <textarea class="form-control rounded-0" id="FormControlTextarea"
                                                 rows="5"></textarea>
                                         </div>
                                         <div class="row justify-content-end mb-5">
                                             <div class="col-lg-4 col-auto ">
-                                                <input class="btn btn-primary btn-block font-weight-bold" type="submit" id="submit"></div>
+                                                <input class="btn btn-primary btn-block font-weight-bold" type="submit"
+                                                    id="submit">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -114,6 +143,14 @@
             </div>
         </div>
     </div>
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          Hecho con <span class="heart">&#9829;</span> por
+          <a class="text-dark" href="https://facebook/hildera">Hilder Arrieta</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
