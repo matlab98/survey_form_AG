@@ -12,84 +12,90 @@
     <title>Formulario de encuesta de satisfacción</title>
 </head>
 
-<body>
-    <header>
-        <h1 id=title>Bienvenidos a Hb companies</h1>
-        <div>
-            <p id="description">Denos una breve opinión acerca de tu experiencia en nuestro portal</p> 
-        </div>
+<body oncontextmenu='return false' class='snippet-body'>
+    <div class="container card-0 justify-content-center ">
+        <header>
+            <h1 id=title>Bienvenidos a Hb companies</h1>
+            <br>
+            <div class="col-lg-5 col-md-6 col-sm-12">
+                <p id="description">Denos una breve opinión acerca de tu experiencia en nuestro portal</p>
+            </div>
+
+            <main class="container">
+                <form action="" id="survey-form">
+
+                    <div class="form-group">
+                        <label for="name" id="name-label">Nombre</label>
+                        <input type="text" class="form-control" name="name" id="name" aria-descripbedby=""
+                            placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" id="email-label">Correo</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su correo"
+                            required>
+                        <small id="" class="form-text" text-muted>Nosotros nunca compartiremos tu correo con nadie
+                            más</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="number" id="number-label">Número</label>
+                        <input type="number" class="form-control" name="number" id="number"
+                            placeholder="Ingrese su número" min="3000000000" max="9999999999" required>
+                    </div>
+                    <div class="form-check">
+                        <label for="position">Cargo</label>
+
+                    </div>
+
+                    </span>
+                    <input list="dropdown"><datalist id="dropdown">
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Aprendiz de tiempo completo">Aprendiz de tiempo completo</option>
+                        <option value="Cargo tiempo completo">Cargo tiempo completo</option>
+                        <option value="Prefiero no decir">Prefiero no decir</option>
+                        <option value="Otra">Otra</option>
+                    </datalist>
+                    </label>
+                    <h2>Su opinión nos importa</h2>
+                    <section>
+                        <p>¿Cuál es su opinión sobre los siguientes aspectos de nuestra gestión?</p>
+                        <label for="">
+                            <input type="radio" name="CalProducto" value="Excelente">
+                            <input type="radio" name="CalProducto" value="Bueno">
+                            <input type="radio" name="CalProducto" value="Regular">
+                            <input type="radio" name="CalProducto" value="Malo">
+                        </label>
+                    </section>
+                    <section>
+                        <p>¿En que podemos mejorar? (Marque todas las que corresponda)</p>
+                        <label for="">
+                            <input type="checkbox" name="Improve" value="Diseño de la página">x
+                        </label>
+                        <label for="">
+                            <input type="checkbox" name="Improve" value="Velocidad de respuesta">x
+                        </label>
+                        <label for="">
+                            <input type="checkbox" name="Improve" value="Demasiados elementos en una vista">x
+                        </label>
+                        <label for="">
+                            <p>¿De que forma podemos mejorar?. Describalo</p>
+                            <textarea name="improve" id="improve" cols="30" rows="10"></textarea>
+                        </label>
+                    </section>
+                    <label for="">
+                        <p>Ingrese algunas observaciones</p>
+                        <textarea name="observation" id="observation" cols="30" rows="10"></textarea>
+                    </label>
+                    <input type="submit" id="submit">
+
+                </form>
+            </main>
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+            <footer>
+                <img class="" src="imagen/banner.jpeg" data-image-width="2264" data-image-height="1500" alt="">
+
+            </footer>
+    </div>
     </header>
-    <main class="container">
-        <form action="" id="survey-form">
-
-            <div class="form-group">
-                <label for="name" id="name-label">Nombre</label>
-                <input type="text" class="form-control" name="name" id="name" aria-descripbedby=""
-                    placeholder="Ingrese su nombre" required>
-            </div>
-            <div class="form-group">
-                <label for="email" id="email-label">Correo</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su correo" required>
-                <small id="" class="form-text" text-muted>Nosotros nunca compartiremos tu correo con nadie más</small>
-            </div>
-            <div class="form-group">
-                <label for="number" id="number-label">Número</label>
-                <input type="number" class="form-control" name="number" id="number" placeholder="Ingrese su número"
-                    min="3000000000" max="9999999999" required>
-            </div>
-            <div class="form-check">
-                <label for="position">Cargo</label>
-
-            </div>
-
-                </span>
-                <input list="dropdown"><datalist id="dropdown">
-                    <option value="Estudiante">Estudiante</option>
-                    <option value="Aprendiz de tiempo completo">Aprendiz de tiempo completo</option>
-                    <option value="Cargo tiempo completo">Cargo tiempo completo</option>
-                    <option value="Prefiero no decir">Prefiero no decir</option>
-                    <option value="Otra">Otra</option>
-                </datalist>
-            </label>
-            <h2>Su opinión nos importa</h2>
-            <section>
-                <p>¿Cuál es su opinión sobre los siguientes aspectos de nuestra gestión?</p>
-                <label for="">
-                    <input type="radio" name="CalProducto" value="Excelente">
-                    <input type="radio" name="CalProducto" value="Bueno">
-                    <input type="radio" name="CalProducto" value="Regular">
-                    <input type="radio" name="CalProducto" value="Malo">
-                </label>
-            </section>
-            <section>
-                <p>¿En que podemos mejorar? (Marque todas las que corresponda)</p>
-                <label for="">
-                    <input type="checkbox" name="Improve" value="Diseño de la página">x
-                </label>
-                <label for="">
-                    <input type="checkbox" name="Improve" value="Velocidad de respuesta">x
-                </label>
-                <label for="">
-                    <input type="checkbox" name="Improve" value="Demasiados elementos en una vista">x
-                </label>
-                <label for="">
-                    <p>¿De que forma podemos mejorar?. Describalo</p>
-                    <textarea name="improve" id="improve" cols="30" rows="10"></textarea>
-                </label>
-                       </section>
-            <label for="">
-                <p>Ingrese algunas observaciones</p>
-                <textarea name="observation" id="observation" cols="30" rows="10"></textarea>
-            </label>
-            <input type="submit" id="submit">
-
-        </form>
-    </main>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<footer>
-    <img class=""  src="imagen/banner.jpeg" data-image-width="2264" data-image-height="1500" alt="">
-     
-</footer>
 </body>
 
 </html>
